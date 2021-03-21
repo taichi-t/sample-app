@@ -1,24 +1,38 @@
-# README
+# Ruby on Rails turorial to build an rails application
+  
+This is a repository for an application built with the following materials
+[*Ruby on Rails turorial*](https://railstutorial.jp/)
+[Michael Hartl](http://www.michaelhartl.com/) 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## LICENCE
 
-Things you may want to cover:
+[Ruby on Rails turorial] More details, please see (https://railstutorial.jp/)
+The code is published under MIT Licence and Beerware.
+More details, please see [LICENSE.md](LICENSE.md)
 
-* Ruby version
+## Usage
+First, clone the repository to your local environment, and then execute the following command to install Gems.
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+After that, migrate db.
 
-* Database creation
+```
+$ rails db:migrate
+```
+Finally, make sure that it works well by executing tests.
 
-* Database initialization
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+You are ready to build Rails server if tests all are passed.
 
-* Deployment instructions
+```
+$ rails server
+```
 
-* ...
+More detail, Please see [*Ruby on Rails tutorial*](https://railstutorial.jp/)
