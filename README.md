@@ -36,3 +36,28 @@ $ rails server
 ```
 
 More detail, Please see [*Ruby on Rails tutorial*](https://railstutorial.jp/)
+
+## Memo
+### revert generated code
+
+ex) Contoroller
+
+```
+$ rails generate controller StaticPages home help
+$ rails destroy controller StaticPages home help
+```
+
+ex) Model
+
+```
+$ rails generate model User name:string email:string
+$ rails destroy model User // no need params such as name:stirng or email:string
+```
+
+ex) DB
+
+```
+$ rails db:midrate
+$ rails db:rollback // Revert to the last version.
+$ rails db:migrate VERSION=0 // Revert to the initial version.
+```
