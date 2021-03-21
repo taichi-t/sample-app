@@ -22,8 +22,8 @@ After that, migrate db.
 ```
 $ rails db:migrate
 ```
-Finally, make sure that it works well by executing tests.
 
+Finally, make sure that it works well by executing tests.
 
 ```
 $ rails test
