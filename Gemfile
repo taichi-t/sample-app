@@ -12,6 +12,9 @@ gem 'jbuilder',     '2.7.0'
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'awesome_print'
+  gem "pry-rails"
+  
 end
 
 group :development do
